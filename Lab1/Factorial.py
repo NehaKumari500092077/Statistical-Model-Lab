@@ -5,4 +5,7 @@ def factorial(n):
         return  n * factorial(n - 1)
     
 num = int(input("Enter a no: "));
-print("Factorial of",num,"is",factorial(num))
+if(num < 0):
+    print("Invalid Input");
+else:
+    print("Factorial of",num,"is",factorial(num))
